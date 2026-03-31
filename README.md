@@ -64,7 +64,10 @@ task-manager/
 
 ### ✏️ Edit Task
 
-![Edit Task](./screenshots/task-edit.png)
+![Edit Task](./screenshots/task-edit.png )
+
+
+
 
 🙌 Author
 
@@ -74,9 +77,3 @@ Moinuddin Shaikh
 
 Give it a star on GitHub ⭐
 
-
-  <img src="./screenshots/dashboard.png" width="80%"/>
-  <img src="./screenshots/task-edit.png" width="80%"/>
-    <img src="./screenshots/signup.png" width="80%"/>
-      <img src="./screenshots/login.png" width="80%"/>
-  
