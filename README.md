@@ -74,6 +74,7 @@ Moinuddin Shaikh
 
 Give it a star on GitHub ⭐
 
-<p align="center">
+
+<p >
   <img src="./screenshots/dashboard.png" width="700"/>
 </p>
