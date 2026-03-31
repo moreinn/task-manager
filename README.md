@@ -20,4 +20,4 @@
 
 ### ✏️ Edit Task
 
-![Edit Task](./screenshots/edit-task.png)
+![Edit Task](./screenshots/task-edit-png)
