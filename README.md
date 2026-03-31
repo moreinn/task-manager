@@ -29,6 +29,7 @@ Dotenv (Environment variables)
 SQLite (Lightweight database)
 
 
+
 📁 Project Structure
 task-manager/
 │
@@ -43,6 +44,7 @@ task-manager/
 │   └── public/
 │
 └── .gitignore
+
 
 ### 🔐 Signup Page
 
