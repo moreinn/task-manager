@@ -76,3 +76,7 @@ Give it a star on GitHub ⭐
 
 
   <img src="./screenshots/dashboard.png" width="700"/>
+  <img src="./screenshots/task-edit.png" width="700"/>
+    <img src="./screenshots/signup.png" width="700"/>
+      <img src="./screenshots/login.png" width="700"/>
+  
