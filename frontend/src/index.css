@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  color: #334155;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.9), transparent 32%),
+    linear-gradient(135deg, #fdf2f8, #eff6ff 52%, #ecfeff);
+}
+
+a {
+  color: #0f766e;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #0d9488;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.card {
+  width: min(100%, 380px);
+  padding: 32px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 24px 60px rgba(148, 163, 184, 0.2);
+  backdrop-filter: blur(18px);
+}
+
+h1 {
+  margin: 0 0 20px;
+  text-align: center;
+  color: #1e293b;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 13px 14px;
+  border: 1px solid #dbeafe;
+  border-radius: 14px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.95);
+  color: #334155;
+  font: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+input:focus {
+  border-color: #7dd3fc;
+  box-shadow: 0 0 0 4px rgba(125, 211, 252, 0.18);
+}
+
+button {
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #7dd3fc, #a7f3d0);
+  color: #164e63;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease,
+    filter 0.18s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 24px rgba(125, 211, 252, 0.22);
+  filter: saturate(1.03);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+  transform: none;
+  box-shadow: none;
+}
+
+.error {
+  margin: 0 0 10px;
+  color: #dc2626;
+  font-size: 13px;
+}
+
+.app-shell {
+  align-items: flex-start;
+}
+
+.dashboard-card {
+  width: min(100%, 760px);
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.dashboard-header h1 {
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.dashboard-subtitle {
+  margin: 0;
+  color: #64748b;
+}
+
+.secondary-button {
+  width: auto;
+  min-width: 110px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #0f766e;
+  border: 1px solid #ccfbf1;
+  box-shadow: none;
+}
+
+.secondary-button:hover {
+  box-shadow: 0 12px 22px rgba(153, 246, 228, 0.2);
+}
+
+.input-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.input-row input,
+.task-edit-input {
+  margin-bottom: 0;
+}
+
+.add-button {
+  width: auto;
+  min-width: 110px;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid #e0f2fe;
+}
+
+.task-main {
+  flex: 1;
+}
+
+.task-title {
+  width: 100%;
+  padding: 0;
+  background: transparent;
+  color: #1e293b;
+  text-align: left;
+  box-shadow: none;
+}
+
+.task-title:hover {
+  background: transparent;
+  box-shadow: none;
+  color: #0f766e;
+}
+
+.task-title.completed {
+  color: #94a3b8;
+  text-decoration: line-through;
+}
+
+.task-edit-input {
+  min-height: 48px;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.action-button {
+  width: auto;
+  min-width: 84px;
+}
+
+.edit-button {
+  background: linear-gradient(135deg, #bfdbfe, #ddd6fe);
+  color: #4338ca;
+}
+
+.save-button {
+  background: linear-gradient(135deg, #86efac, #bbf7d0);
+  color: #166534;
+}
+
+.cancel-button {
+  background: linear-gradient(135deg, #fde68a, #fef3c7);
+  color: #92400e;
+}
+
+.delete-button {
+  background: linear-gradient(135deg, #fecaca, #fee2e2);
+  color: #b91c1c;
+}
+
+.empty-state {
+  margin: 24px 0 0;
+  text-align: center;
+  color: #64748b;
+}
+
+@media (max-width: 640px) {
+  .center {
+    padding: 18px;
+  }
+
+  .card {
+    padding: 24px;
+  }
+
+  .dashboard-header,
+  .input-row,
+  .task-item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .task-actions {
+    width: 100%;
+  }
+
+  .secondary-button,
+  .add-button,
+  .action-button {
+    width: 100%;
+  }
+}
